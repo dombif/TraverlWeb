@@ -1,21 +1,76 @@
 <!doctype html>
+<html>
 <head>
   <meta charset="utf-8">
   <title>Your Favorite</title>
-  <h1><a href="https://www.youtube.com/watch?v=xRbPAVnqtcs" target="_blank" title="BOL4_Travel">Travel</a></h1>
-  <h2>
-    <ol>
-      <li><a href="My Travel.html" title="My favorite travel destination">My Travel</a></li>
-      <li><a href="FAQ.html" title="What are you curious about?">FAQ</li>
-    </ol>
-  </h2>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G3HMG5LT7L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <style>
+    #grid{
+      display:grid;
+      grid-template-columns: 150px 1fr;
+    }
+    .right{
+      border-right: 2px #91aec4 solid;
+      width: 180px;
+      padding-left: 10px;
+    }
+    body{
+      margin: 0;
+    }
+    li,a{
+      text-decoration:none;
+      color:#5f84a2;
+    }
+    h1{
+      text-align: center;
+      border-bottom: 8px #91aec4 double;
+      font-size: 45px;
+      margin-bottom:0;
+    }
+    p{
+      text-align: center;
+      margin-top: 60px;
+      color: #91aec4;
+      font-size:20px;
+    }
+    @media(max-width:600px){
+      #grid{
+        display:block;
+      }
+      .right{
+        border-right:none;
+      }
+      p{
+       text-align:justify;
+       margin:45px;
+       margin-top: 0;
+      }
+    }
+  </style>
+    <h1><a href="https://www.youtube.com/watch?v=xRbPAVnqtcs" target="_blank" title="BOL4_Travel" style="color:#5f84a2;">Travel</a></h1>
 
-  gtag('config', 'G-G3HMG5LT7L');
-</script>
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G3HMG5LT7L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-G3HMG5LT7L');
+    </script>
 </head>
+<body>
+  <div id="grid">
+    <div class="right">
+      <h2>
+        <ol>
+          <li><a href="My Travel.html" title="My favorite travel destination">My Travel</a></li><br>
+          <li><a href="FAQ.html" title="What are you curious about?">FAQ</a></li>
+        </ol>
+      </h2>
+    </div>
+      <div>
+        <p>Please click on the text.</p>
+      </div>
+  </div>
+</body>
+</html>
