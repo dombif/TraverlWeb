@@ -1,118 +1,76 @@
 <!doctype html>
 <html>
-  <head>
-   <meta charset="utf-8">
-   <title>My Travel</title>
-   <style>
-   #grid{
-     display:grid;
-     grid-template-columns: 150px 1fr;
-   }
-   .video{
-     margin-left: 18px;
-   }
-   .h3p{
-     margin:100px 0 0 450px;
-     text-align: left;
-   }
+<head>
+  <meta charset="utf-8">
+  <title>Your Favorite</title>
+  <style>
+    #grid{
+      display:grid;
+      grid-template-columns: 150px 1fr;
+    }
+    .right{
+      border-right: 2px #91aec4 solid;
+      width: 180px;
+      padding-left: 10px;
+    }
     body{
-      margin:0;
+      margin: 0;
+    }
+    li,a{
+      text-decoration:none;
+      color:#5f84a2;
     }
     h1{
       text-align: center;
-      color:#3e83a8;
-      border-bottom: solid 1px #3e83a8;
-      padding-bottom: 10px;
+      border-bottom: 8px #91aec4 double;
       font-size: 45px;
+      margin-bottom:0;
     }
-    h2{
-      margin: 30px 0 10px 20px;
+    p{
+      text-align: center;
+      margin-top: 60px;
+      color: #91aec4;
+      font-size:20px;
     }
-    ul{
-      list-style-type:square;
-      color:#8ac4d0;
-      font-size:17px;
-    }
-    @media(max-width:952px){
+    @media(max-width:600px){
       #grid{
-        display: block;
+        display:block;
       }
-      .h3p{
-        margin:20px 0 0 20px;
+      .right{
+        border-right:none;
       }
-      a{
-        text-decoration: none;
-        color:black;
+      p{
+       text-align:justify;
+       margin:45px;
+       margin-top: 0;
       }
     }
-   </style>
-   <h1>My Travel</h1>
-   <ul>
-    <li>My A Travel Video</li>
-    <li>A Travel Destination I Really Want To Go</li>
-    <li>Bucket List</li>
-   </ul>
-   <!-- Google tag (gtag.js) -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=G-G3HMG5LT7L"></script>
-   <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-     gtag('config', 'G-G3HMG5LT7L');
-   </script>
-  </head>
-    <body>
-      <h2>My A Travel Video</h2>
-      <div id="grid">
-        <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/_O6h657-pfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="h3p">
-        <h3 style="margin-top:5px;margin-bottom:-10px; color:#8ac4d0;">
-        Travel Destination : Okinawa</h3>
-        <p>I traveled to Okinawa when I was a college student.<br>After watching the travel video on YouTube, I edited the travel video as a hobby.<br>The trip to Okinawa was so perfect.The sea was really clear, and scuba diving and snorkeling there were even happy.</p>
-        <p style="margin-top:-5px;">So I wanted to leave a video of my happiest trip and I am proud to upload it on this website.</p>
-        </div>
-      </div>
+  </style>
+    <h1><a href="https://www.youtube.com/watch?v=xRbPAVnqtcs" target="_blank" title="BOL4_Travel" style="color:#5f84a2;">Travel</a></h1>
 
-
-      <h2>A Travel Destination I Really Want To Go</h2>
-      &emsp;<img src="switzerland.jpg" width="20%" title="Switzerland">&emsp;
-      <img src="Maldives.jpg" width="20%" title="Maldives">&emsp;
-      <img src="NY.jpg" width="20%" title="New York City">&emsp;
-      <img src="Paris.jpg" width="20%" title="Paris">
-
-
-        <p style="margin:0 0 0 20px;">
-        Put your <u>mouse</u> over the picture.</p>
-
-      <h2 style="color:#f4d160;">Bucket List</h2>
-       <ol>
-        <li><input type="checkbox"> Skydiving</li>
-        <li><input type="checkbox"> Paragliding</li>
-        <li><input type="checkbox"> Watching The Aurora</li>
-       </ol>
-
-       <p style="text-align:center"><a href="index.html">Go Back</p>
-
-         <div id="disqus_thread"></div>
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G3HMG5LT7L"></script>
     <script>
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-        /*
-        var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        */
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://my-travel-1.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-G3HMG5LT7L');
     </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </body>
+</head>
+<body>
+  <div id="grid">
+    <div class="right">
+      <h2>
+        <ol>
+          <li><a href="My Travel.html" title="My favorite travel destination">My Travel</a></li><br>
+          <li><a href="FAQ.html" title="What are you curious about?">FAQ</a></li>
+        </ol>
+      </h2>
+    </div>
+      <div>
+        <p>Please click on the text.</p>
+      </div>
+  </div>
+</body>
 </html>
