@@ -1,9 +1,51 @@
 <!doctype html>
 <html>
   <head>
-
    <meta charset="utf-8">
    <title>My Travel</title>
+   <style>
+   #grid{
+     display:grid;
+     grid-template-columns: 150px 1fr;
+   }
+   .video{
+     margin-left: 18px;
+   }
+   .h3p{
+     margin:100px 0 0 450px;
+     text-align: left;
+   }
+    body{
+      margin:0;
+    }
+    h1{
+      text-align: center;
+      color:#3e83a8;
+      border-bottom: solid 1px #3e83a8;
+      padding-bottom: 10px;
+      font-size: 45px;
+    }
+    h2{
+      margin: 30px 0 10px 20px;
+    }
+    ul{
+      list-style-type:square;
+      color:#8ac4d0;
+      font-size:17px;
+    }
+    @media(max-width:952px){
+      #grid{
+        display: block;
+      }
+      .h3p{
+        margin:20px 0 0 20px;
+      }
+      a{
+        text-decoration: none;
+        color:black;
+      }
+    }
+   </style>
    <h1>My Travel</h1>
    <ul>
     <li>My A Travel Video</li>
@@ -16,49 +58,61 @@
      window.dataLayer = window.dataLayer || [];
      function gtag(){dataLayer.push(arguments);}
      gtag('js', new Date());
-
      gtag('config', 'G-G3HMG5LT7L');
    </script>
   </head>
-  <body>
-    <h2>&nbsp;&nbsp;My A Travel Video</h2>
-    &nbsp;&nbsp;<iframe width="560" height="315" src="https://www.youtube.com/embed/_O6h657-pfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <h3 style="margin-top:5px;margin-bottom:-10px;" >&nbsp;&nbsp;&nbsp;Travel Destination : Okinawa</h3>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I traveled to Okinawa when I was a college student.<br>&nbsp;&nbsp;&nbsp;&nbsp;After watching the travel video on YouTube, I edited the travel video as a hobby.<br>&nbsp;&nbsp;&nbsp;&nbsp;The trip to Okinawa was so perfect.The sea was really clear, and scuba diving and snorkeling there were even happy.</p><p style="margin-top:-5px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;So I wanted to leave a video of my happiest trip and I am proud to upload it on this website.</p>
+    <body>
+      <h2>My A Travel Video</h2>
+      <div id="grid">
+        <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_O6h657-pfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="h3p">
+        <h3 style="margin-top:5px;margin-bottom:-10px; color:#8ac4d0;">
+        Travel Destination : Okinawa</h3>
+        <p>I traveled to Okinawa when I was a college student.<br>After watching the travel video on YouTube, I edited the travel video as a hobby.<br>The trip to Okinawa was so perfect.The sea was really clear, and scuba diving and snorkeling there were even happy.</p>
+        <p style="margin-top:-5px;">So I wanted to leave a video of my happiest trip and I am proud to upload it on this website.</p>
+        </div>
+      </div>
 
-    <h2 style="margin-top:30px;">&nbsp;&nbsp;A Travel Destination I Really Want To Go</h2>
-      &nbsp;&nbsp;&nbsp;&nbsp;<img src="switzerland.jpg"  width="20%" title="Switzerland">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Maldives.jpg" width="20%" title="Maldives">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="NY.jpg" width="20%" title="New York City">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Paris.jpg" width="20%" title="Paris">
 
-      <p style="margin-top:0px;">&nbsp;&nbsp;&nbsp;&nbsp;Put your <u>mouse</u> over the picture.</p>
+      <h2>A Travel Destination I Really Want To Go</h2>
+      &emsp;<img src="switzerland.jpg" width="20%" title="Switzerland">&emsp;
+      <img src="Maldives.jpg" width="20%" title="Maldives">&emsp;
+      <img src="NY.jpg" width="20%" title="New York City">&emsp;
+      <img src="Paris.jpg" width="20%" title="Paris">
 
-    <h2 style="margin-top:30px;">&nbsp;&nbsp;Bucket List</h2>
-     <ol>
-      <li><input type="checkbox"> Skydiving</li>
-      <li><input type="checkbox"> Paragliding</li>
-      <li><input type="checkbox"> Watching The Aurora</li>
-     </ol>
 
-     <p style="text-align:center"><a href="index.html">Go Back</p>
+        <p style="margin:0 0 0 20px;">
+        Put your <u>mouse</u> over the picture.</p>
 
-       <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://my-travel-1.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <h2 style="color:#f4d160;">Bucket List</h2>
+       <ol>
+        <li><input type="checkbox"> Skydiving</li>
+        <li><input type="checkbox"> Paragliding</li>
+        <li><input type="checkbox"> Watching The Aurora</li>
+       </ol>
 
-  </body>
+       <p style="text-align:center"><a href="index.html">Go Back</p>
+
+         <div id="disqus_thread"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://my-travel-1.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </body>
 </html>
